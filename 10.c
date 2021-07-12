@@ -6,6 +6,7 @@ int digit_sum(int x){
 		sum=sum+tmp;
 		x=x/10;
 	}
+	
 	return sum;
 }
 
