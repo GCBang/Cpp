@@ -10,7 +10,7 @@ int digit_sum(int x){
 }
 
 int main(){
-	freopen("10input.txt", "rt", stdin);
+	//freopen("10input.txt", "rt", stdin);
 	int n, num, i, sum, max=-2147000000, res;
 	scanf("%d", &n);
 	for(i=1; i<=n; i++){
