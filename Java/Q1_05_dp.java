@@ -3,7 +3,6 @@ package Java;
 import java.util.*;
 
 public class Q1_05_dp {
-    
     public static void main(String[] args){
         String s = "inflearn";
 
@@ -22,7 +21,6 @@ public class Q1_05_dp {
 		dict.add("ab");
 		System.out.println(a.wordBreak_dp(s, dict));
     }
-    
     public boolean wordBreak_dp(String s, List<String> dic) {
         //DP : 동적계획법 string(s) 에서 탐색하여 wordDict에 해당 값이 있는지를 체크
         Set<String> wordDictSet = new HashSet(dic); //중복되지 않기 위하여 해시 사용
@@ -45,7 +43,7 @@ public class Q1_05_dp {
         System.out.println("dp[s.length()]: "+dp[s.length()]+" "+s.length());
         return dp[s.length()];
     }
-    
+
     //내 답안
     public static boolean solve_Myself(String s, String[] wordDict){
         for(int i=0; i<wordDict.length; i++){
@@ -55,4 +53,5 @@ public class Q1_05_dp {
         }
         return true;
     }
+
 }
